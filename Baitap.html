@@ -1,0 +1,34 @@
+<html lang="vi">
+  <head>
+    <link rel="stylesheet" href="Baitap.css">
+    <title>Bài tập</title>
+  </head>
+    <body>
+          <nav class="clearfix">
+              <ul class="clearfix">
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Tin tức</a></li>
+              <li> 
+              <a href="#">Sản phẩm</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Tivi</a></li>
+                    <li><a href="#">Tủ lạnh</a></li>
+                    <li><a href="#">Máy giặt</a></li>
+                    <li><a href="#">Điều hòa</a></li>
+                 </ul>
+                </li>
+               <li><a href="#">Dịch vụ</a></li>
+               <li><a href="#">Liên hệ</a></li>
+            </ul>
+          <a href="#" id="pull"><i class="fas fa-bars"></i></a>
+      </nav>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+        $('#pull').click(function() {
+          $('nav ul').toggleClass('show');
+      });
+    });
+  </script>
+</html>
